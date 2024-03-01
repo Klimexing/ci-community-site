@@ -11,24 +11,25 @@
 <body>
     <header class="site-header py-0 sticky-top">
       <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light bg-dark bg-body-tertiary">
-        <div class="container">
+        <div class="container d-flex justify-content-between align-items-center">
       
-          <a class="navbar-brand" href="index.html">
-            <img src="/images/apple-touch-icon.png" alt="Ci website logo" width="24" height="24">
-          </a>
-      
-          <div class="d-flex justify-content-end align-items-center"> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="dropdown">
+            <a class="btn dropdown-toggle navbar-brand" role="button" id="dropdownmenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="index.html">
+              <img src="/images/apple-touch-icon.png" alt="Ci website logo" width="24" height="24">
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+              <a class="dropdown-item" href="#about-section">About</a>
+              <a class="dropdown-item" href="#program-section">Programs</a>
+              <a class="dropdown-item" href="#experience-section">Experience</a>
+              <a class="dropdown-item" href="src/blog.html">Blog</a>
+            </div>
+          </div>
+
+            <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
     
-            <ul class="navbar-nav navbar-nav-secondary order-lg-3 ms-auto">
-              <li class="nav-item d-none d-lg-block">
-                <a class="btn btn-outline-dark rounded-pill ms-2" href="#connect-section">Connect</a>
-              </li>
-            </ul>
-          </div>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-parent="#mainNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -42,6 +43,14 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="src/blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="d-flex align-items-end">
+            <ul class="navbar-nav navbar-nav-secondary order-lg-3 ms-auto align-items-end">
+              <li class="nav-item d-lg-block">
+                <a class="btn btn-outline-dark rounded-pill ms-2" href="#connect-section">Connect</a>
               </li>
             </ul>
           </div>
@@ -193,11 +202,8 @@
         </div>
     </footer>
 
-    <!-- Script section-->
-    <!--
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    -->
     
 </body>
 </html>
